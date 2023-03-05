@@ -132,5 +132,3 @@
 // for (let i = 20; i <= 200000; i *= 10) {
 //   console.log(`ini adalah perkalian ke-${i}`); //contoh 4
 // }
-
-//TESTING
