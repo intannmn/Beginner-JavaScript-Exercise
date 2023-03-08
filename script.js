@@ -404,3 +404,7 @@
 //   console.log("Udah Mandi Belom?");
 // }, 5000);
 // console.log("Mandi sana, Udah Bau Tau!!!!!");
+
+// const intr = setInterval(() => {
+//   console.log(Math.round(Math.random()));
+// }, 1000);
