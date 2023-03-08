@@ -242,3 +242,68 @@
 //   console.log("HAHAHAHA WWKWKWKKWKWKWKWKWKWKWKWKW");
 // }
 // wowo();
+
+//------PARAMETER & ARGUMENT IN FUNCTION-----
+// function say(name) {
+//   console.log(`Hello, ${name}`);
+// }
+// say("Dewo");
+
+//------MULTIPLE PARAMETER & ARGUMENT----
+// function perkalian(a, b) {
+//   const kali = a * b;
+//   console.log(`Hasilnya ${kali}`);
+// }
+// perkalian(2, 9);
+
+//------RETURN STATEMENT----
+// let test = function (a, b) {
+//   return a * b;
+// };
+// console.log(test(2, 9));
+
+//------SCOPE FUNCTION----
+// let kota = "Bandung";
+
+// function city() {
+//   let kota = "Sukabumi";
+//   console.log(kota); // scope function
+// }
+// console.log(kota); // scope non-function
+
+//------BLOCKED SCOPE VARIABEL----
+// let tinggi = 8;
+// if (tinggi > 5) {
+//   let lebar = 7; //Blocked scope kecuali use Var
+//   //   console.log(lebar);
+// }
+// console.log(lebar);
+
+// for (let index = 0; index < 10; index++) {
+//   const indexNumber = index; // Blocked Scope kecuali use Var
+//   //   console.log(indexNumber);
+// }
+// console.log(indexNumber);
+
+//------LEXICAL SCOPE----
+// function lamarKerja() {
+//   const jabatan = "Programmer";
+
+//   function lebihDalam() {
+//     function orangDalam() {
+//       let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
+//       console.log(kenalan);
+//     }
+
+//     orangDalam();
+//   }
+
+//   lebihDalam();
+// }
+
+//------FUNCTION EXPRESSIONS----
+// const hasilPerpangkatan = function (nilai) {
+//   return nilai * nilai;
+// };
+
+//------FUNCTION As ARGUMENT----
