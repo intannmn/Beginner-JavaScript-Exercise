@@ -307,3 +307,100 @@
 // };
 
 //------FUNCTION As ARGUMENT----
+// function duaKali(func) {
+//   func();
+//   func();
+// }
+
+// function lemparDadu() {
+//   //function as arguments
+//   const hasil = Math.floor(Math.random() * 6) + 1;
+//   console.log(hasil);
+// }
+
+//------FUNCTION RETURN FUNCTION----
+// function hasilFunction() {
+//   const rand = Math.random();
+//   if (rand > 0.1) {
+//     return function () {
+//       console.log("Selamat, nilai nya lebih besar");
+//     };
+//   } else {
+//     return function () {
+//       console.log("Maaf, Silahkan coba lagi");
+//     };
+//   }
+// }
+
+//------METHOD DEFINE----
+// function learn() {  //function biasa
+//   console.log("Belajar JavaScript");
+//   return "Yuk, Belajar JavaScript";
+// }
+
+// const myLearn = {   //object
+
+//   bagi: function (x, y) {   // method
+//     return x / y;
+//   },
+// };
+
+//------KEYWORD THIS----
+// const aku = {
+//   nama: "intan mn",
+//   hobi: "jajan batagor",
+//   lainnya: function () {
+//     return `Hai, saya ${this.nama}, hobi saya adalah ${this.hobi};`;
+//     // this fungsinya utk mendapatkan nilai dari variabel yang dipanggil
+//   },
+// };
+
+//------TRY AND CATCH----
+//Example 1
+// try {
+//   aku.lainnya;
+// } catch {
+//   console.log("error");
+// }
+// // aku.lainnya();
+// console.log("ini dijalankan setelah try and catch");
+
+//Example 2
+// function hi(msg) {
+//   try {
+//     console.log(msg.toUpperCase());
+//   } catch (error) {
+//     console.log(error);
+//     console.log("Masukkan Tipe data string");
+//   }
+// }
+
+//------FOREACH METHOD----
+// const nilai = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+// nilai.forEach(function (el) {
+//   if (el % 2 === 0) {
+//     console.log(el);
+//   }
+// });
+
+//------MAP METHOD----
+// const nilai = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+// const nilaiDb = nilai.map(function (num) { //regenerate nilai atau callbacks
+// });
+
+//------ARROW FUNCTION----
+// const pangkat = (x) => { //arrow function
+//   return x * x;
+// };
+
+//------ARROW FUNCTION RETURN IMPLISIT----
+// const rand = () => Math.floor(Math.random() * 200); //tanpa return
+
+//------SET TIMEOUT & SET INTERVAL----
+// console.log("Hallo Dewo");
+
+// setTimeout(() => {
+//   console.log("Udah Mandi Belom?");
+// }, 5000);
+// console.log("Mandi sana, Udah Bau Tau!!!!!");
