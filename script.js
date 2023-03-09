@@ -408,3 +408,54 @@
 // const intr = setInterval(() => {
 //   console.log(Math.round(Math.random()));
 // }, 1000);
+
+//-----------------ARRAY METHOD----------------
+
+//----FILTER----
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const ganjil = angka.filter((n) => {
+//   return n % 2 === 1; //hanya memfilter angka ganjil
+// });
+
+//----EVERY----
+// const score = ["80", "85", "88", "90"];
+// const graduate = score.every((score) => score >= 75); //true
+//const scoreGraduate = score.every((score) => score >= 85); //false
+
+//----SOME----
+// const score = ["80", "85", "88", "90"];
+// // const graduate = score.some((score) => score >= 75); //true
+// const scoreGraduate = score.some((score) => score >= 85); //true
+
+//----REDUCE----
+// const examScore = [80, 85, 88, 90, 70, 88, 91];
+// const total = examScore.reduce((hasil, score) => {
+//   return hasil + score;
+// });
+
+//-----------------THIS IN OBJECT----------------
+// const nama = {
+//   fullName: "Intan MN",
+//   umur: "21",
+//   test: function () {
+//     console.log(this.fullName, this.umur);
+//   },
+// };
+
+//----SPREAD OPERATOR----
+// let data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// // console.log(Math.max(...data));
+// console.log(...data, ...data); //penggabungan
+
+//----MERGE OBJECT SPREAD OPERATOR----
+// const nama = {
+//   fullName: "Intan MN",
+//   umur: "21",
+// };
+// const gabung = { ...nama, alamat: "Bandung" };
+// console.log(gabung);
+
+//----REST PARAMETER----
+// const tambahan = (...nums) => {
+//   return nums.reduce((total, el) => total + el);
+// };
