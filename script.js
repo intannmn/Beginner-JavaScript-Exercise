@@ -1,3 +1,83 @@
+//-----IF, ELSE IF, ELSE STATEMENT-----
+// const iniTanggal = 27;
+// if (iniTanggal === 27) {
+//   alert("IF STATEMENT");
+// } else if (iniTanggal === 20) {
+//   alert("ELSE IF STATEMENT");
+// } else {
+//   alert("ELSE STATEMENT");
+// }
+
+//-----TENARY OPERATOR-----
+// const nilai = 20;
+// const aksi = nilai >= 75 ? "Selamat anda lulus" : "Remedial!";
+// console.log(aksi);
+
+//-----NULLISH COALESCING OPERATOR-----
+//BEFORE
+// let parameter;
+// let data = parameter;
+// if (data === undefined || data === null) {
+//   data = "Default Value";
+// }
+// console.log(data);
+//AFTER
+// let parameter;
+// let data = parameter ?? "Default Value";
+// console.log(data);
+
+//-----OPTIONAL CHAINING-----
+// const person = {
+//   address: {
+//     country: "Indonesia",
+//   },
+// };
+//BEFORE
+// if(person.address !== undefined && person.address !== null){
+//     country = person.address.country;
+// }
+//AFTER
+// let country = person?.address?.country;
+// document.writeln(`<p>${country}</p>`);
+
+//-----NESTING CONDITION-----
+// const isiPassword = prompt("Silahkan Isi Password!");
+// if (isiPassword.length >= 6) {
+//   if (isiPassword.indexOf(" ") === -1) {
+//     alert("Password Valid!");
+//   } else {
+//     alert("Password Tidak Boleh Ada Spasi!");
+//   }
+// } else {
+//   alert("Password Minimal 6 Karakter!");
+// }
+
+//----------LOGIC OPERATOR----------
+//----AND----
+// let age = 19;
+// let gender = "male";
+
+// if (gender === "male" && age === 19) {
+//   console.log("Legal!!");
+// }
+
+//----OR----
+// let nama = prompt("masukkan nama kamu");
+// if (nama === "Intan" || nama === "Dewo") {
+//   console.log("Halo, selamat datang");
+// } else {
+//   console.log("Saya tidak kenal kamu");
+// }
+
+//----NOT----
+// let role = prompt("Masukkan role akun");
+// if (role !== "admin") {
+//   console.log("Akses ditolak!");
+// } else {
+//   console.log("Boleh mengaksesnya");
+// }
+
+//-----------SWITCH CASE-----------
 // let nilai = prompt("Masukkan Nilai Kamu");
 // switch (String(nilai)) {
 //   case "70":
@@ -13,13 +93,7 @@
 //     console.log("Sangat Buruk");
 // }
 
-// let nama = [];
-// for (let i = 0; i < 3; i++) {
-//   nama[i] = prompt("Masukkan Nama Ke-" + i);
-// }
-// let tampilNama = prompt("Tampilkan Nama");
-// console.log(nama[tampilNama]);
-
+//---------EXERCISE----------
 // let id;
 // let email = [];
 // let password = [];
@@ -44,6 +118,7 @@
 //   }
 // }
 
+// ------PUSH, POP, SHIFT, UNSHIFT METHOD ARRAY------
 // let barbel = [];
 // barbel.push(20, 15, 10, 5);
 // barbel.push(2.5, 0);
@@ -51,19 +126,103 @@
 // barbel.shift();
 // barbel.unshift(20);
 
+//-----STRUCTURE ARRAY-----
+// let iniKosong = [];
+// let kumpulanHuruf = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+// let kumpulanAngka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let iniCampuran = [true, 1, "string", null];
+// console.log("----------------------------");
+//---MENAMPILKAN SEMUA INDEX DARI TIAP ARRAY---
+// console.log(iniKosong);
+// console.log(kumpulanHuruf);
+// console.log(kumpulanAngka);
+// console.log(iniCampuran);
+// console.log("----------------------------");
+//---MENAMPILKAN INDEX TERTENTU DARI TIAP ARRAY---
+// console.log(iniKosong[0]);
+// console.log(kumpulanHuruf[0]);
+// console.log(kumpulanHuruf[2]);
+// console.log(kumpulanAngka[4]);
+// console.log(kumpulanAngka[6]);
+// console.log(iniCampuran[0]);
+// console.log(iniCampuran[3]);
+// console.log("----------------------------");
+//---MENGUBAH & MENAMBAH INDEX TERTENTU DARI TIAP ARRAY---
+// iniKosong[0] = 500;
+// iniKosong[2] = 1000;
+// iniKosong[8] = 1500;
+// console.log(iniKosong[8]);
+// kumpulanHuruf[0] = "Z";
+// console.log(kumpulanHuruf[0]);
+// kumpulanAngka[6] = 100;
+// console.log(kumpulanAngka[6]);
+// iniCampuran[0] = false;
+// console.log(iniCampuran[0]);
+// console.log("----------------------------");
+//---MENAMPILKAN SEMUA HASIL AKHIR INDEX DARI TIAP ARRAY---
+// console.log(iniKosong);
+// console.log(kumpulanHuruf);
+// console.log(kumpulanAngka);
+// console.log(iniCampuran);
+
+// -------------METHOD ARRAY---------------
+
+//----CONCAT----
 // let array1 = ["intan", "dewo"];
 // let array2 = ["mei", "botak"];
-// let array3 = array2.concat(array1);
-
+// let array3 = array2.concat(array1); //concat (penggabungan) array
 // console.log(array3);
 
-// let bilangan = [100, 199, 2008, 313, 2125];
+//----INCLUDES----
+// const array1 = [1, 2, 3];
+// console.log(array1.includes(2));
+// Expected output: true
+// const pets = ["cat", "dog", "bat"];
+// console.log(pets.includes("cat"));
+// Expected output: true
+// console.log(pets.includes("at"));
+// Expected output: false
 
-// console.log(bilangan.join("/"));
+//----JOIN----
+// const elements = ['Fire', 'Air', 'Water'];
+// console.log(elements.join());
+// Expected output: "Fire,Air,Water"
+// console.log(elements.join(''));
+// Expected output: "FireAirWater"
+// console.log(elements.join('-'));
+// Expected output: "Fire-Air-Water"
 
-// const outfit = ["celana", "baju", "blouse", "tanktop"];
-// console.log(outfit);
+//----INDEXOF----
+// const beasts = ["ant", "bison", "camel", "duck", "bison"];
+// console.log(beasts.indexOf("bison"));
+// console.log(beasts.indexOf("bison", 2)); //mulai dari index ke-2
+// console.log(beasts.indexOf("giraffe"));
 
+//----REVERSE---
+// const array1 = ["one", "two", "three"];
+// console.log("array1:", array1);
+// const reversed = array1.reverse(); //kebalikan
+// console.log("reversed:", reversed);
+// console.log("array1:", array1);
+
+//----SLICE----
+// const beasts = ["ant", "bison", "camel", "duck", "elephant", "bird"];
+// console.log(beasts.slice(2));
+
+//----SPLICE----
+// const months = ["Jan", "March", "April", "June"];
+// months.splice(1, 0, "Feb");
+
+//----SORT----
+// const months = ["Jan", "March", "April", "June"];
+// months.sort();
+// console.log(months);
+
+// const angka = [778, 109, 529, 441, 992];
+// angka.sort();
+// console.log(angka);
+
+// ------NESTED ARRAY-----
 // const board = [
 //   ["O", null, "O"],
 //   ["X", "X", "X"],
@@ -71,7 +230,7 @@
 // ];
 // console.log(board[2][0]);
 
-// ------MEMBUAT SEBUAH OBJECT------
+// ----------OBJECT-----------
 // let namaHewan = {
 //   unggas: "Burung",
 //   melata: "Ular",
@@ -459,3 +618,28 @@
 // const tambahan = (...nums) => {
 //   return nums.reduce((total, el) => total + el);
 // };
+
+//----DESTRUCTING ARRAY----
+// const nama = ["Intan", "Bayu", "Dewo", "Wahyu", "Lusi", "Adit", "Mark"];
+// const level = ([gold, silver, bronze, ...peserta] = nama); //jangan string
+
+//----DESTRUCTING OBJECT----
+// const nama = {
+//   fullName: "Intan MN",
+//   umur: "21",
+// };
+
+// const { fullName, umur, phone = "0852888667" } = nama; //tambah object property
+
+//----DESTRUCTING FUNCTION----
+// const user = {
+//   name: "Jimin",
+//   email: "jimin@gmail.com",
+//   role: "administrator",
+// };
+
+// const userRole = ({ name, role }) => {
+//   return `${name} ${role}`;
+// };
+
+//--------------------------------------END--------------------------------
