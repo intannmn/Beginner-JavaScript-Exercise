@@ -1,4 +1,42 @@
 h1,
 p {
     text-align: center;
+    font-family: sans-serif;
+
+}
+
+.isi {
+    font-size: 25px;
+}
+
+#text {
+    color: black;
+
+}
+
+.rata {
+    margin: 0 auto;
+    display: block;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.colom {
+    column-count: 1;
+}
+
+@media (min-width: 640px) {
+    .colom {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 800px) {
+    .colom {
+        column-count: 5;
+    }
 }
